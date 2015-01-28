@@ -112,7 +112,7 @@ html, body {
   opacity: .8;
 }
 
-.social-column {
+.chat-column {
   width: 28vw;
   padding: 0 2vw;
   height: 30vw;
@@ -134,10 +134,18 @@ html, body {
   float: left;
 }
 
+.chat-column {
+  float: right;
+}
+
 .social-column #twitter-widget-0 .timeline .stream,
 .social-column iframe {
   max-height: 30vw !important;
   height: 30vw !important;
+}
+
+.chat-column .header-avatar {
+  display: none;
 }
 
 .stream-phrase {
@@ -204,7 +212,7 @@ html, body {
     padding-bottom: 0;
   }
 
-  .social-column {
+  .chat-column {
     width: 80vw;
     height: 45vw;
     margin: 0 10vw;
