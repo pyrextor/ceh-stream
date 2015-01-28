@@ -182,6 +182,7 @@ html, body {
     float: right;
     width: 28vw;
     height: 45vw;
+    overflow: hidden;
   }
 
   .social-column iframe {
@@ -189,7 +190,6 @@ html, body {
     width: 100% !important;
     height: 100% !important;
     max-height: 100% !important;
-    overflow: scroll;
   }
 
   .chat-column {
