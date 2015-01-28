@@ -1,0 +1,222 @@
+/* Landing style */
+@font-face {
+ font-family: 'myriad-regular';
+ src: url('http://canariasenhora.com/fonts/MyriadWebPro.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'myriad-bold';
+ src: url('http://canariasenhora.com/fonts/MyriadWebPro-Bold.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'myriad-italic';
+ src: url('http://canariasenhora.com/fonts/MyriadWebPro-Italic.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#main {
+  padding-bottom:333px;
+}
+
+.transition {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.gradient{
+  height: 22px;
+  background: #f4ad00; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f4ad00 0%, #ff6e00 13%, #56b8b5 26%, #6fb3cb 39%, #cb4d00 51%, #9c102d 64%, #fbcba3 77%, #c8e1e8 90%, #0085c4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f4ad00), color-stop(13%,#ff6e00), color-stop(26%,#56b8b5), color-stop(39%,#6fb3cb), color-stop(51%,#cb4d00), color-stop(64%,#9c102d), color-stop(77%,#fbcba3), color-stop(90%,#c8e1e8), color-stop(100%,#0085c4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #f4ad00 0%,#ff6e00 13%,#56b8b5 26%,#6fb3cb 39%,#cb4d00 51%,#9c102d 64%,#fbcba3 77%,#c8e1e8 90%,#0085c4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #f4ad00 0%,#ff6e00 13%,#56b8b5 26%,#6fb3cb 39%,#cb4d00 51%,#9c102d 64%,#fbcba3 77%,#c8e1e8 90%,#0085c4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #f4ad00 0%,#ff6e00 13%,#56b8b5 26%,#6fb3cb 39%,#cb4d00 51%,#9c102d 64%,#fbcba3 77%,#c8e1e8 90%,#0085c4 100%); /* IE10+ */
+  background: linear-gradient(to right,  #f4ad00 0%,#ff6e00 13%,#56b8b5 26%,#6fb3cb 39%,#cb4d00 51%,#9c102d 64%,#fbcba3 77%,#c8e1e8 90%,#0085c4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4ad00', endColorstr='#0085c4',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient.top{  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.gradient.bottom{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons .icons {
+  max-width: 90px;
+  min-width: 50px;
+  width: 10%;
+  margin: 0 10px;
+}
+
+.social-icons .icons:hover {
+  opacity: .7;
+}
+
+.bottom-text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+}
+
+.copyright {
+  margin-top: 8px;
+}
+
+.developed {
+  height: 30px;
+  width: auto;
+}
+
+.developed:hover {
+  opacity: .8;
+}
+
+.social-column {
+  width: 28vw;
+  padding: 0 2vw;
+  height: 30vw;
+}
+
+.stream-window {
+  width: 54vw;
+  height: 30vw;
+  background: red;
+}
+
+.stream-window iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.social-column,
+.stream-window {
+  float: left;
+}
+
+.social-column #twitter-widget-0 .timeline .stream,
+.social-column iframe {
+  max-height: 30vw !important;
+  height: 30vw !important;
+}
+
+.stream-phrase {
+  font-size: 30px;
+}
+
+@media (max-width: 991px) {
+
+  .stream-phrase {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+
+  .stream-window {
+    width: 80vw;
+    height: 45vw;
+    background: red;
+    margin: 0 10vw;
+    float: none;
+  }
+
+  #footer {
+    position: relative;
+  }
+
+  #main {
+    min-height: 100vw;
+    padding-bottom: 0;
+  }
+
+  .social-column {
+    width: 80vw;
+    height: 30vw;
+    margin: 0 10vw;
+    float: none;
+    position: absolute;
+    top: 48%;
+  }
+
+  .social-column #twitter-widget-0 .timeline .stream,
+  .social-column iframe {
+    max-height: 30vw !important;
+    height: 30vw !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .stream-phrase {
+    font-size: 20px;
+  }
+
+  .bottom-text {
+    font-size: 15px;
+  }
+
+  #footer {
+    position: relative;
+  }
+
+  #main {
+    min-height: 140vw;
+    padding-bottom: 0;
+  }
+
+  .social-column {
+    width: 80vw;
+    height: 45vw;
+    margin: 0 10vw;
+    float: none;
+    position: absolute;
+    top: 38%;
+  }
+
+  .social-column #twitter-widget-0 .timeline .stream,
+  .social-column iframe {
+    max-height: 45vw !important;
+    height: 45vw !important;
+  }
+
+}
