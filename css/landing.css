@@ -113,28 +113,30 @@ html, body {
 }
 
 .chat-column {
-  width: 28vw;
-  padding: 0 2vw;
+  width: 20vw;
+  margin: 0 2vw;
   height: 30vw;
 }
 
 .stream-window {
   width: 54vw;
   height: 30vw;
-  background: red;
 }
 
-.stream-window iframe {
-  width: 100%;
-  height: 100%;
+.stream-window iframe,
+.social-column iframe {
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.social-column,
-.stream-window {
+.social-column {
   float: left;
+  margin-left: 2vw;
+  width: 17vw;
 }
 
-.chat-column {
+.chat-column,
+.stream-window {
   float: right;
 }
 
@@ -160,11 +162,10 @@ html, body {
   }
 
   .stream-window {
-    width: 80vw;
+    width: 65vw;
     height: 45vw;
-    background: red;
-    margin: 0 10vw;
-    float: none;
+    margin: 0 0 0 20px;
+    float: left;
   }
 
   #footer {
@@ -172,28 +173,41 @@ html, body {
   }
 
   #main {
-    min-height: 100vw;
+    min-height: 120vw;
     padding-bottom: 0;
   }
 
   .social-column {
-    width: 80vw;
-    height: 30vw;
-    margin: 0 10vw;
-    float: none;
-    position: absolute;
-    top: 48%;
+    margin: 0 20px 0 0;
+    float: right;
+    width: 28vw;
+    height: 45vw;
   }
 
-  .social-column #twitter-widget-0 .timeline .stream,
   .social-column iframe {
-    max-height: 30vw !important;
-    height: 30vw !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .chat-column {
+    width: calc( 100% - 40px );
+    height: 45vw;
+    margin: 0 20px;
+    float: none;
+    position: absolute;
+    top: 71vw;
+  }
+
+  .chat-column iframe {
+    max-height: 100% !important;
+    height: 100% !important;
   }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .stream-phrase {
     font-size: 20px;
@@ -213,18 +227,22 @@ html, body {
   }
 
   .chat-column {
-    width: 80vw;
-    height: 45vw;
-    margin: 0 10vw;
-    float: none;
-    position: absolute;
-    top: 38%;
+    display: none;
   }
 
-  .social-column #twitter-widget-0 .timeline .stream,
-  .social-column iframe {
-    max-height: 45vw !important;
-    height: 45vw !important;
+  .stream-window {
+    width: 90vw;
+    margin: 0 5vw;
+    float: none;
+    height: 50.63vw;
+  }
+
+  .social-column {    
+    width: 90vw;
+    margin: 0 5vw;
+    float: none;
+    height: 50.63vw;
+    margin-top: 15px;
   }
 
 }
