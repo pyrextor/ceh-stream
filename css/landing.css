@@ -182,7 +182,7 @@ html, body {
     float: right;
     width: 28vw;
     height: 45vw;
-    overflow: hidden;
+    overflow: scroll;
   }
 
   .social-column iframe {
