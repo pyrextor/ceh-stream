@@ -159,12 +159,12 @@ html, body {
   font-size: 30px;
 }
 
-.apple .timeline-footer {
+.apple #twitter-widget-0 .timeline-footer {
   position: fixed;
   width: 95%;
 }
 
-.apple .timeline {
+.apple #twitter-widget-0 .timeline {
   height: 100%;
 }
 
