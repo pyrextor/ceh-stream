@@ -189,7 +189,7 @@ html, body {
     width: 100% !important;
     height: 100% !important;
     min-height: 0 !important;
-    max-height: 45vw;
+    max-height: 100% !important;
   }
 
   .chat-column {
@@ -244,11 +244,6 @@ html, body {
     float: none;
     height: 50.63vw;
     margin-top: 15px;
-  }
-
-  .social-column iframe {
-    max-height: 50.63vw !important;
-    height: 50.63 !important;
   }
 
 }
