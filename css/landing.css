@@ -147,7 +147,7 @@ html, body {
 }
 
 .social-column #twitter-widget-0 .timeline .stream {
-  -webkit-overflow-scrolling:touch;
+  -webkit-overflow-scrolling-y: touch !important;
 }
 
 .chat-column .header-avatar {
