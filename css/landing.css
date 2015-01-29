@@ -159,12 +159,12 @@ html, body {
   font-size: 30px;
 }
 
-.apple #twitter-widget-0 .timeline-footer {
-  position: fixed;
+.social-column iframe .timeline-footer {
+  position: fixed !important;
   width: 95%;
 }
 
-.apple #twitter-widget-0 .timeline {
+.social-column iframe .timeline {
   height: 100%;
 }
 
