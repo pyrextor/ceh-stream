@@ -176,6 +176,7 @@ html, body {
   z-index: 9999;
   background: url('../img/background.png') no-repeat;
   background-size: 100%;
+  background-color: #FFF;
 }
 
 .background-bottom-bar {
