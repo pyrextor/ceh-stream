@@ -159,6 +159,10 @@ html, body {
   font-size: 30px;
 }
 
+.chat-column .header-avatar {
+  display: none;
+}
+
 @media (max-width: 991px) {
 
   .stream-phrase {
