@@ -182,7 +182,6 @@ html, body {
     float: right;
     width: 28vw;
     height: 45vw;
-    overflow: scroll;
   }
 
   .social-column iframe {
@@ -208,7 +207,7 @@ html, body {
 
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
 
   .stream-phrase {
     font-size: 20px;
