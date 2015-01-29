@@ -146,6 +146,10 @@ html, body {
   height: 30vw !important;
 }
 
+.social-column #twitter-widget-0 .timeline .stream {
+  -webkit-overflow-scrolling:touch;
+}
+
 .chat-column .header-avatar {
   display: none;
 }
