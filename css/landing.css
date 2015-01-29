@@ -234,6 +234,7 @@ html, body {
   background: url('../img/top-left.svg') no-repeat;
   top: 1.75vw;
   left: 0;
+  width: 3.52vw;
 }
 
 .top-right {
