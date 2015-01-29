@@ -146,9 +146,9 @@ html, body {
   height: 30vw !important;
 }
 
-.social-column #twitter-widget-0 .timeline .stream {
-  -webkit-overflow-scrolling: touch !important;
-  overflow-y: scroll !important;
+.social-column {
+  -webkit-overflow-scrolling: none !important;
+  overflow-y: none !important;
 }
 
 .chat-column .header-avatar {
