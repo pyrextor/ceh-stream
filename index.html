@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Open+Sans:300,400" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -65,6 +66,11 @@
       <div class="row gradient bottom"></div>
     </div>
   </div>
-</body>
+  <script type="text/javascript">
+    var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    console.log(is_ios);
+    if (is_ios) $('.social-column').addClass("apple");
+    else $('.social-column').addClass("android");
+  </script>
 </body>
 </html>
