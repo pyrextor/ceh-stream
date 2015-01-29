@@ -159,8 +159,8 @@ html, body {
   font-size: 30px;
 }
 
-.chat-column .header-avatar {
-  display: none;
+.chat-column iframe .header-avatar {
+  display: none !important;
 }
 
 @media (max-width: 991px) {
