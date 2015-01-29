@@ -240,19 +240,19 @@ html, body {
     width: 90vw;
     margin: 0 5vw;
     float: none;
-    height: 50.63vw;
+    height: 51vw;
   }
 
   .social-column {    
     width: 90vw;
     margin: 0 5vw;
     float: none;
-    height: 50vw;
+    height: 55vw;
     margin-top: 15px;
   }
 
   .social-column iframe {
-    max-height: 50vw !important;
+    max-height: 55vw !important;
   }
 
 }
