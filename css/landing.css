@@ -159,15 +159,6 @@ html, body {
   font-size: 30px;
 }
 
-.social-column iframe .timeline-footer {
-  position: fixed !important;
-  width: 95%;
-}
-
-.social-column iframe .timeline {
-  height: 100%;
-}
-
 @media (max-width: 991px) {
 
   .stream-phrase {
