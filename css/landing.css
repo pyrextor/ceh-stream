@@ -146,8 +146,7 @@ html, body {
   height: 30vw !important;
 }
 
-.social-column #twitter-widget-0 .timeline .stream,
-.social-column {
+.social-column #twitter-widget-0 .timeline .stream {
   -webkit-overflow-scrolling: touch !important;
   overflow-y: scroll !important;
 }
