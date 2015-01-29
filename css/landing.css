@@ -147,8 +147,8 @@ html, body {
 }
 
 .social-column {
-  -webkit-overflow-scrolling: none !important;
-  overflow-y: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-y: scroll !important;
 }
 
 .chat-column .header-avatar {
