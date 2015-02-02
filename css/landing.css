@@ -133,6 +133,8 @@ html, body {
   float: left;
   margin-left: 2vw;
   width: 17vw;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-y: scroll !important;
 }
 
 .chat-column,
@@ -146,18 +148,33 @@ html, body {
   height: 30vw !important;
 }
 
-.social-column {
-  -webkit-overflow-scrolling: touch !important;
-  overflow-y: scroll !important;
-}
-
-.chat-column .header-avatar {
-  display: none;
-}
-
 .chat-column iframe {
   border: 1px solid #d9d9d9;
   width: 99%;
+}
+
+.column-button {
+  height: 1.75vw;
+  width: 100%;
+  background: url('../img/background.png') no-repeat;
+  background-size: 100% 1024px;
+  background-color: #FFF;
+  color: #FFF;
+  font-size: 1vw;
+  padding-top: 0.15vw;
+}
+
+.column-icon {
+  float: left;
+  margin-left: 0.8vw;
+  margin-top: 0.2vw;
+  margin-right: -20px;
+}
+
+.column-display {
+  float: right;
+  margin-right: 1vw;
+  margin-top: 0.2vw;
 }
 
 .stream-phrase {
@@ -282,6 +299,10 @@ html, body {
     padding-bottom: 0;
   }
 
+  .chat-column .column-button {
+    margin-right: 5px !important;
+  }
+
   .social-column {
     margin: 0 20px 0 0;
     float: right;
@@ -289,16 +310,20 @@ html, body {
     height: 45vw;
   }
 
-  .social-column iframe {
+  .social-column iframe,
+  .twitter-container {
     min-width: 0 !important;
     width: 100% !important;
     height: 100% !important;
     min-height: 0 !important;
-    max-height: 45vw !important;
+    max-height: 43vw !important;
   }
 
   .chat-column {
     width: calc( 100% - 40px );
+    width: -moz-calc( 100% - 40px );
+    width: -webkit-calc( 100% - 40px );
+    width: -o-calc( 100% - 40px );
     height: 45vw;
     margin: 0 20px;
     float: none;
@@ -309,6 +334,12 @@ html, body {
   .chat-column iframe {
     max-height: 100% !important;
     height: 100% !important;
+    width: 100%;
+  }
+
+  .chat-column .column-button {
+    margin: 0px !important;
+    width: 100% !important;
   }
 
 }
@@ -333,7 +364,7 @@ html, body {
   }
 
   .chat-column {
-    display: none;
+    display: none !important;
   }
 
   .stream-window {
@@ -361,6 +392,10 @@ html, body {
 
   .social-column iframe {
     max-height: 55vw !important;
+  }
+
+  .column-button {
+    display: none !important;
   }
 
 }
